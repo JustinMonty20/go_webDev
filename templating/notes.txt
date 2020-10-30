@@ -1,0 +1,25 @@
+Parse your files &&
+Execute your files.
+
+Template is just a container that holds all of your parsed templates.
+You can execute them all at once (your parced templates) or execute a specific one with a method. Check the docs.
+
+Turn your files into a pointer to a Template type and then write the template you want.
+
+Want to ParseGlob all templates into a single pointer to a Template on init &&
+then read from the specific files name in your template container.
+
+func init only runs on start up.
+
+here is how you import data coming into a template. Use the dot.
+{{$gf := . }}
+
+this sets whatever data passed in when i execute a parsed file and places it in the variable gf in my file.
+<html>
+<head>
+    <title>More templates</title>
+</head>
+<body>
+    <h1>The best ever {{$gf}}</h1>
+</body>
+</html>

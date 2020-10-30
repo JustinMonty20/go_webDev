@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enlightned People</title>
+</head>
+<body>
+    <h2>Good People</h2>
+    <ul>
+        {{range .GoodPpl}}
+        <li>{{.Name}}: {{.Motto}}</li>
+        {{end}}
+    </ul>
+
+    <h2>who drive these sick cars</h2>
+
+    <ul>
+        {{range .SickCars}}
+        <li>Cars has {{.Doors}} doors && is the color {{.Color}} </li>
+        {{end}}
+    </ul>
+</body>
+</html>

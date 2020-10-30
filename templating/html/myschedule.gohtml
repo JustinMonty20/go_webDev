@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+    <title>My Schedule</title>
+</head>
+<body>
+    {{range .}}
+    {{.AcaYear}}
+        {{.Fall.Term}}
+            {{range .Fall.Courses}}
+                <ul>
+                    <li>{{.Number}}, {{.Name}}, {{.Units}}</li>
+                </ul>
+                    {{end}}
+        {{.Spring.Term}}
+            {{range .Spring.Courses}}
+                <ul>
+                    <li>{{.Number}}, {{.Name}}, {{.Units}}</li>
+                </ul>
+            {{end}}
+    {{end}}
+</body>
+</html>

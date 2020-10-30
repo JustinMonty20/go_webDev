@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roomates</title>
+</head>
+<body>
+<ol>
+    {{range $name, $age := .}}
+    <li>Roomate's name is {{$name}} and they are {{$age}} years old</li>
+    {{end}}
+</ol>
+</body>
+</html>

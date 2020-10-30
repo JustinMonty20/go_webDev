@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resturants</title>
+</head>
+<body>
+    <h1>Resturants</h1>
+    {{range .}}
+        <h2>{{.Name}}</h2>
+            {{range .Menu}}
+                <h3>{{.TimeOfDay}}</h3>
+                <ul>
+                    {{range .Dishes}}
+                            <li>{{.Name}} -- ${{.Price}}</li>
+                    {{end}}
+                </ul>
+            {{end}}
+
+
+    {{end}}
+</body>
+</html>

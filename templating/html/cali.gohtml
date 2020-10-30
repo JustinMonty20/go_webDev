@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cali Hotels</title>
+</head>
+<body>
+    <ul>
+        {{range .}}
+
+            <h3>{{ .Region }}</h3>
+            {{range .Hotels}}
+                <li>{{.Name}} -- {{.City}} -- {{.Zip}}</li>
+                {{end}}
+        {{end}}
+    </ul>
+
+</body>
+</html>

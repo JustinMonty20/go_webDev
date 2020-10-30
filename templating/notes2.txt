@@ -1,0 +1,18 @@
+passing in a composite data structur or an aggregrate data function.
+
+Need to remember to end a range. {{range .}} loops throught the data being sent through.
+
+When you are passing data into a template you get the opportunity to pass in one value.
+To get past this we can have nested data types to actually pass a lot of different values into a file.
+
+How do i structure my data to pass it in as some compostie data type.  How do I access that data.
+
+Passing functions in to modify data in the temaplate or the access of that data.
+
+Functions are first class citizens in go.
+
+There are predfined global functions we can use in our go templates.  Right about the index in the docs.
+
+* index position global variable.
+* and conditional logic for items to be printed in a template.
+* gt,lt,eq all for checking values in templates.
